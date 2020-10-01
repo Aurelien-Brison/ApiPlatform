@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+
 trait Timestapable
 {
     /**
@@ -11,10 +12,10 @@ trait Timestapable
     private \DateTimeInterface $createdAt;
 
     /**
-     * @var \DateTimeInterface
+     * 
      * @ORM\Column(type="datetime", nullable=true)
      */
-    private \DateTimeInterface $updatedAt;
+    private $updatedAt;
 
     /**
      * Get the value of createdAt
